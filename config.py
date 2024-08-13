@@ -26,21 +26,21 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
+    API_ID    = os.environ.get("API_ID", "20718334")
+    API_HASH  = os.environ.get("API_HASH", "4e81464b29d79c58d0ad8a0c55ece4a5")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","Cluster0")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://Umaid:umaid@cluster0.k2yxsvu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1002112596877") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
-    MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "2")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
+    MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "3")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
     
     # wes response configuration     
     WEB_SUPPORT = bool(os.environ.get("WEB_SUPPORT", "True"))
