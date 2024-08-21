@@ -38,7 +38,7 @@ class Config(object):
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/96ad3e2e58da9ded5d4ac.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get("ADMIN", "5585016974").split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1002126461167") 
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1001930406310") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002078429106"))
     MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "2")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
     
